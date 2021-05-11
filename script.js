@@ -9,17 +9,11 @@ function calculate () {
 
   if ((userAge > 17) && (dayOfWeek.toUpperCase() == 'MONDAY' || dayOfWeek.toUpperCase() == 'TUESDAY' || dayOfWeek.toUpperCase() == 'WEDNESDAY' || dayOfWeek.toUpperCase() == 'THURSDAY' || dayOfWeek.toUpperCase() == 'FRIDAY')) {
     document.getElementById('answer').innerHTML = 'Time to go to work!'
-  }
-
-  else if ((userAge < 18) && (dayOfWeek.toUpperCase() == 'MONDAY' || dayOfWeek.toUpperCase() == 'TUESDAY' || dayOfWeek.toUpperCase() == 'WEDNESDAY' || dayOfWeek.toUpperCase() == 'THURSDAY' || dayOfWeek.toUpperCase() == 'FRIDAY')) {
+  } else if ((userAge < 18) && (dayOfWeek.toUpperCase() == 'MONDAY' || dayOfWeek.toUpperCase() == 'TUESDAY' || dayOfWeek.toUpperCase() == 'WEDNESDAY' || dayOfWeek.toUpperCase() == 'THURSDAY' || dayOfWeek.toUpperCase() == 'FRIDAY')) {
     document.getElementById('answer').innerHTML = 'Time for school!'
-  }
-
-  else if (dayOfWeek.toUpperCase() == 'SATURDAY' || dayOfWeek.toUpperCase() == 'SUNDAY') {
+  } else if (dayOfWeek.toUpperCase() == 'SATURDAY' || dayOfWeek.toUpperCase() == 'SUNDAY') {
     document.getElementById('answer').innerHTML = 'Time to relax for the weekend!'
-  }
-
-  else {
+  } else {
     document.getElementById('answer').innerHTML = 'Please enter a valid input. Make sure your spelling is correct.'
   }
 
